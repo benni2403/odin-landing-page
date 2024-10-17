@@ -1,0 +1,162 @@
+/* for debugging */
+
+* {
+    outline: 2px solid red;
+    box-sizing: border-box;
+}
+
+.header, .header *, .one, .one *, .two, .two * {
+    outline: none;
+}
+
+div {
+    min-height: 20px;
+}
+
+/* FONT FAMILY AND MARGIN */
+
+body {
+    margin: 0;
+    font-family: "Roboto"
+}
+
+/* ALIGNMENT & FLEXBOXING */
+
+.header, .one, .two, .three, .four, .footer {
+    padding: 0 180px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header ul {
+    display: flex;
+    gap: 20px;
+}
+
+.one {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    gap: 75px;
+}
+
+.heroaction{
+    flex: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.action {
+    padding: 5px 30px;
+    width: max-content;
+}
+
+.image {
+    flex: 3;
+}
+
+.subheader {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.illustration-container {
+    margin: 0 0 80px 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.illustration {
+    width: 160px;
+    text-align: center;
+}
+
+.illustration-image {
+    width: 100%;
+    height: 160px;
+    border: 2px solid #3882F6;
+    border-radius: 10px;
+}
+
+/* BACKGROUND AND FONT COLORS */
+
+.header, .one, .footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+.header-links, .subtext {
+    color: #E5E7EB;
+}
+
+.action {
+    color: white;
+    background-color: #3882F6;
+}
+
+.subheader, .illustration {
+    color: #1F2937;
+}
+
+.three {
+    background-color: #E5E7EB;
+}
+
+/* PLACEHOLDER */
+.image {
+    background-color: #696e77;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FONT SIZES & WEIGHTS */
+
+.header-logo {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.header-links {
+    font-size: 18px;
+}
+
+.herotext {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.subtext, .illustration {
+    font-size: 18px;
+}
+
+.subheader {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+/* MISCELLANOUS */
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.action {
+    border-radius: 5px;
+}
